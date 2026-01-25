@@ -41,19 +41,21 @@ function initRoutes() {
     template('projects', () => view("pages/projects.htm", "Projects"));
     template('youtube', () => view("pages/youtube.htm", "Videos"));
     template('about', () => view("pages/about.htm", "About Me"));
-    template('contact', () => view("pages/contact.htm", "Contact"));
-    template('projects-landon-and-emma', () => view("pages/projects/landon-and-emma.htm", "Landon & Emma"));
-    template('projects-mysims-kart-ds', () => view("pages/projects/mysims-kart-ds.htm", "MySims Kart DS"));
-    template('projects-armedit', () => view("pages/projects/armedit.htm", "MKDS ARM9 Editor"));
+    template('socialmedia', () => view("pages/socialmedia.htm", "Social Media"));
+    template('projects-neko-chronicles', () => view("pages/projects/neko-chronicles.htm", "Neko Chronicles"));
+    template('projects-arm9-editor', () => view("pages/projects/arm9-editor.htm", "MKDS ARM9 Editor"));
+	template('projects-disgaea-ds-manager', () => view("pages/projects/disgaea-ds-manager.htm", "Disgaea DS Manager"));
+	template('projects-mysims-kart-ds', () => view("pages/projects/mysims-kart-ds.htm", "MySims Kart DS"));
     // Define routes here
     route('/', 'home');
     route('/projects', 'projects');
     route('/youtube', 'youtube');
     route('/about', 'about');
-    route('/contact', 'contact');
-    route('/projects/landon-and-emma', 'projects-landon-and-emma');
-    route('/projects/mysims-kart-ds', 'projects-mysims-kart-ds');
-    route('/projects/armedit', 'projects-armedit');
+    route('/socialmedia', 'socialmedia');
+    route('/projects/neko-chronicles', 'projects-neko-chronicles');
+    route('/projects/arm9-editor', 'projects-arm9-editor');
+	route('/projects/disgaea-ds-manager', 'projects-disgaea-ds-manager');
+	route('/projects/mysims-kart-ds', 'projects-mysims-kart-ds');
 }
 initRoutes();
 // Add event listeners
